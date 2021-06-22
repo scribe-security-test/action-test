@@ -12,6 +12,6 @@ outputs:
 runs:
   using: 'docker'
   #image: 'Dockerfile'
-  image: scribesecuriy.jfrog.io/scribe-docker-local/agent:latest
+  image: docker://scribesecuriy.jfrog.io/scribe-docker-local/agent:latest
   args:
     - ${{ inputs.who-to-greet }}
